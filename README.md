@@ -56,7 +56,7 @@ Our detector achieves near-perfect detection accuracy with an average real‑tim
 
 ## Paper
 
-```
+```bibtex
 @inproceedings{author2024efficient,
   title     = {Efficient Real-time Quadcopter Propeller Detection and Attribute Estimation with High-resolution Event Camera},
   author    = {Spetlik, Radim and Uhrova, Tereza and Matas, Jiri},
