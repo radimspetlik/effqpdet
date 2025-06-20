@@ -1,0 +1,53 @@
+mode: 'visual' # 'textual' or 'visual'
+is_analysis: false
+is_runtime_analysis: false
+is_quiet: true
+
+recording_filepath: c:/Users/radio/Downloads/propeller_dataset/camera-angle-0/recording_2023-11-30_13-20-18_7950rpm.raw # ~250Hz
+#recording_filepath: c:/Users/radio/Downloads/propeller_dataset/camera-angle-0/recording_2023-11-30_13-10-23_204rpm.raw
+#recording_filepath: c:/Users/radio/Downloads/propeller_dataset/camera-angle-90/recording_2023-11-30_12-51-43_8140rpm.raw
+#recording_filepath: c:/Users/radio/Downloads/propeller_dataset/camera-angle-10/recording_2023-11-30_13-04-30_8100rpm.raw
+
+analysis_filepath: c:\Users\radio\Downloads\analysis.h5
+tensorboard_log_file: tb_log.tfevents
+
+simulate_real_time: true
+
+
+height: 720
+width: 1280
+
+start_us: 0
+end_us: 0
+
+acc: 400 #40000
+fps: 250
+
+temporal_stride: 1
+
+# 2^k is the block size
+k_min: 4
+k_max: 4
+
+alpha_of_burst_std: 0.9
+alpha_interarrival_time: 0.0001
+alpha_interarrival_time_window_size: 5000
+min_interarrival_time: 0.5
+max_rate: 720.0
+T_min: 10
+
+min_E_x_of_std: 3300 #us
+max_E_x_of_std: 33000 #us
+
+# Standard-deviation thresholds
+max_burst_std_per_cent: 20.0
+
+scale_down_factor: 1.0
+rotation_angle: 0.0
+
+polarity: 'b'   # 'n' or 'p' or 'b' or 's'
+
+compute_pitch_roll: true
+pitch_roll_estimation_alpha: 0.00001
+pitch_gt: 1
+pitch_scaler: 1.0

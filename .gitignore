@@ -1,0 +1,6 @@
+.idea
+cmake-*
+data/*
+Google_tests/lib
+yaml-cpp_lib/lib
+video
